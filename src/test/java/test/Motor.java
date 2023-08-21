@@ -9,14 +9,9 @@ public class Motor {
 		registro = nuevoregistro;
 	}
 	
-	void asignarTipo (String nuevotipo) {
-		switch(nuevotipo) {
-		case "electrico":
-			tipo = "electrico";
-		case "gasolina":
-			tipo = "gasolina";
-		default:
-			break;
+	void asignarTipo (String tipo) {
+		if (tipo == "electrico" || tipo == "gasolina") {
+			this.tipo = tipo;
 		}
 	}
 }

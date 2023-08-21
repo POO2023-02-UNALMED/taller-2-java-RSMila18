@@ -5,25 +5,9 @@ public class Asiento {
 	int precio;
 	int registro;
 	
-	void cambiarColor (String nuevocolor) {
-		switch (nuevocolor) {
-		case "rojo":
-			color = "rojo";
-			
-		case "verde":
-			color = "verde";
-		
-		case "amarillo":
-			color = "amarillo";
-		
-		case "negro":
-			color = "negro";
-		
-		case "blanco":
-			color = "blanco";
-			
-		default:
-			break;
+	void cambiarColor (String color) {
+		if (color == "rojo" || color == "verde" || color == "amarillo" || color == "negro" || color == "blanco") {
+			this.color = color;
 		}
 	}
 }
